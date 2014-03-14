@@ -1,0 +1,612 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  color: #5a5a5a;
+  font-family: ratio, fantasy;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+	body {
+	  font-size: 16px;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: harfang-pro, fantasy;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: #ccc;
+}
+
+.navbar-inverse .navbar-brand {
+	color: white;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 350px;
+	margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+	.carousel {
+	  height: 500px;
+	}
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 350px;
+  background-color: #777;
+}
+
+@media (min-width: 768px) {
+	.carousel .item {
+	  height: 500px;
+	}
+}
+
+.carousel-inner > .item {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+div.container.marketing div.row > .services {
+	margin-bottom: 20px;
+}
+
+div.container.marketing h3 {
+	margin-top: 0;
+}
+
+@media (min-width: 768px) {
+	div.container.marketing div.row > div {
+		margin-bottom: 40px;
+	}
+	div.container.marketing .callout {
+		margin-bottom: 0;
+	}
+}
+
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 40px;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+
+
+/* Featurettes
+------------------------- */
+
+div.row.featurette {
+	margin-bottom: 40px;
+}
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+	font-size: 32px;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+div.carousel-caption h1.featurette-heading {
+	font-size: 250%;
+}
+
+div.carousel-caption h1.featurette-heading.caption-three-lines {
+	margin-bottom: 20px;
+}
+
+div.carousel-caption h1.featurette-heading.caption-centered {
+	margin-bottom: 30px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+	
+	#navbar-container {
+		max-width: 800px;
+	}
+
+  /* Remove the edge padding needed for mobile */
+  .marketing {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .navbar-wrapper .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 32px;
+  }
+
+	.carousel-caption h1 {
+		font-size: 500%;
+	}	
+	
+}
+
+@media (max-width: 568px) {
+	.carousel-control {
+		display: none;
+	}
+}
+.carousel-control.right, .carousel-control.left {
+	background-image: none;
+}
+
+@media (min-width: 768px) {
+	h1.featurette-heading {
+		font-size: 32px;
+	}
+}
+
+h1.featurette-heading {
+  font-size: 32px;
+	margin-top: 40px;
+}
+
+h1.featurette-heading.top {
+	margin-top: 0;
+}
+
+.navbar-inverse {
+	background: #303C45;
+	opacity: 0.98;
+}
+h2.featurette-heading {
+	margin-top: 4px;
+}
+
+.panel-title > a {
+	color: #428bca;
+	font-family: ratio, fantasy;
+}
+
+.btn-primary {
+	text-align: left;
+	font-size: 16px;
+	background-color: #055999;
+	border-color: #055999;
+}
+
+.btn-primary:hover {
+	background-color: #055999;
+	border-color: #055999;
+}
+
+.btn-cta.btn-email {
+	font-size: 21px;
+	padding: 10px 10px 10px 55px;
+}	
+
+.btn-email, .btn-iphone, .btn-ipad, .btn-universal {
+	padding: 10px 15px 10px 50px;
+}
+
+.btn-email, .btn-iphone, .btn-ipad, .btn-universal {
+	background-repeat: no-repeat;
+	background-position: 10px center;
+  background-size: 35px 35px;
+}
+
+.btn-email {
+	background-image: url(./images/730-envelope-selected.png);
+}
+
+.btn-iphone {
+	background-image: url(./images/iPhone5.png);
+}
+
+.btn-ipad {
+	background-image: url(./images/iPadMini.png);
+}
+
+.btn-universal {
+	background-image: url(./images/Universal.png);
+}
+
+.btn-primary.btn-cta {
+	background-color: #328705;
+	border-color: #328705;
+}
+
+.btn-primary.btn-cta:hover {
+	background-color: #266603;
+	border-color: #266603;
+}
+
+.center {
+	float: none; 	
+	margin-left: auto; 	
+	margin-right: auto; 
+}
+
+div#intro {
+	margin-bottom: 40px;
+	padding: 0 0 20px 0;
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	div#intro {
+		padding: 20px 20% 40px 20%;
+	}
+}
+
+span.clickbait {
+	display: block;
+	font-size: 14px;
+	font-weight: normal;
+	color: #ddd;
+}
+
+div.self-portrait img {
+	max-width: 160px;
+}
+
+#feature {
+	height: 233px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-origin: content-box;
+	background-position: center;
+	background-image: url('../assets/images/MastheadPhone.jpg');
+	margin-top: 40px;
+}
+
+@media only screen and (min-width: 480px) {
+	#feature {
+		background-image: url('../assets/images/MastheadPhoneLandscape.jpg');
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	#feature {
+		background-image: url('../assets/images/Masthead.jpg');
+	}
+}
+
+div.pull-quote {
+	margin-bottom: 29px;
+}
+
+div.pull-quote .lead {
+	margin-bottom: 10px;
+	font-size: 24px;
+}
+
+@media (min-width: 768px) {
+	#feature {
+		height: 700px;
+		padding-bottom: 35px;
+	}
+}
+
+.container-inverse, .footer {
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+}
+
+footer {
+	padding: 10px 0 0;
+}
+
+.container-inverse {
+	color: white;
+	background: #303C45;
+}
+
+footer {
+	padding-top: 20px;
+	margin-bottom: 20px;
+}
+
+/* Logos */
+
+.logo, #feature {
+	cursor: pointer;
+	text-indent: -10000px;
+}
+
+.logo {
+	margin-bottom: 0px;
+	background-size: contain;
+	background-origin: content-box;
+	height: 50px;
+	margin-bottom: 40px;
+	background-origin: content-box;
+}
+
+@media (min-width: 768px) {
+	.logo {
+		margin-bottom: 40px;
+		height: 85px;
+	}
+}
+
+.product {
+	height: 240px;
+}
+
+@media (min-width: 768px) {
+	.product {
+		height: 450px;
+	}
+}
+
+#work hr {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+	#work h2 {
+		margin-top: 30px;
+	}
+}
+
+#nytimes {
+  background: url(../assets/images/NYTimes.jpg) no-repeat center;
+	background-size: contain;
+}
+
+#artsy {
+  background: url(../assets/images/Artsy.jpg) no-repeat center;
+	background-size: contain;
+}
+
+#uniqlo {
+  background: url(../assets/images/Uniqlo.jpg) no-repeat center;
+	background-size: contain;
+}
+
+#longform {
+  background: url(../assets/images/Longform.jpg) no-repeat center;
+	background-size: contain;
+}
+
+#vice {
+  background: url(../assets/images/Vice.jpg) no-repeat center;
+	background-size: contain;
+}
+
+.logo a {
+	position: absolute;
+	width: 100%;
+	height: 85px;
+}
+
+#buzzfeed {
+  background: url(../assets/images/BuzzFeed.png) no-repeat center;
+	background-size: contain;
+	background-origin: content-box;
+}
+
+#newyorker {
+  background: url(../assets/images/NewYorker.png) no-repeat center;
+	background-size: contain;
+	background-origin: content-box;
+}
+
+#atlantic {
+  background: url(../assets/images/TheAtlantic.png) no-repeat center;
+	background-size: contain;
+	background-origin: content-box;
+}
+
+#verge {
+  background: url(../assets/images/Verge.png) no-repeat center;
+	background-size: contain;
+	background-origin: content-box;
+}
+
+#slate {
+  background: url(../assets/images/Slate.png) no-repeat center;
+	background-size: contain;
+	background-origin: content-box;
+}
+
+#tnw {
+  background: url(../assets/images/TNW.png) no-repeat center;
+	background-size: contain;
+	background-origin: content-box;
+}
+
+#smashingmag {
+  background: url(../assets/images/Smashing.png) no-repeat center;
+	background-size: contain;
+	background-origin: content-box;
+}
+
+#mashable {
+  background: url(../assets/images/Mashable.png) no-repeat center;
+	background-size: contain;
+	background-origin: content-box;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+	
+	#feature {
+		background-image: url('../assets/images/MastheadPhone@2x.jpg');
+	}
+	
+	.btn-email {
+		background-image: url(./images/730-envelope-selected@2x.png);
+	}
+
+	.btn-iphone {
+		background-image: url(./images/iPhone5@2x.png);
+	}
+
+	.btn-ipad {
+		background-image: url(./images/iPadMini@2x.png);
+	}
+
+	.btn-universal {
+		background-image: url(./images/Universal@2x.png);
+	}
+
+	#nytimes {
+	  background: url(../assets/images/NYTimes@2x.jpg) no-repeat center;
+		background-size: contain;
+	}
+
+	#artsy {
+	  background: url(../assets/images/Artsy@2x.jpg) no-repeat center;
+		background-size: contain;
+	}
+
+	#uniqlo {
+	  background: url(../assets/images/Uniqlo@2x.jpg) no-repeat center;
+		background-size: contain;
+	}
+
+	#longform {
+	  background: url(../assets/images/Longform@2x.jpg) no-repeat center;
+		background-size: contain;
+	}
+
+	#vice {
+	  background: url(../assets/images/Vice@2x.jpg) no-repeat center;
+		background-size: contain;
+	}
+
+	#buzzfeed {
+  background: url(../assets/images/BuzzFeed@2x.png) no-repeat center;
+  background-size: contain;
+	background-origin: content-box;
+	background-origin: content-box;
+	}
+
+	#newyorker {
+  background: url(../assets/images/NewYorker@2x.png) no-repeat center;
+  background-size: contain;
+	background-origin: content-box;
+	background-origin: content-box;
+	}
+
+	#atlantic {
+  background: url(../assets/images/TheAtlantic@2x.png) no-repeat center;
+  background-size: contain;
+	background-origin: content-box;
+	background-origin: content-box;
+	}
+
+	#verge {
+  background: url(../assets/images/Verge@2x.png) no-repeat center;
+  background-size: contain;
+	background-origin: content-box;
+	background-origin: content-box;
+	}
+
+	#slate {
+  background: url(../assets/images/Slate@2x.png) no-repeat center;
+  background-size: contain;
+	background-origin: content-box;
+	background-origin: content-box;
+	}
+
+	#tnw {
+  background: url(../assets/images/TNW@2x.png) no-repeat center;
+  background-size: contain;
+	background-origin: content-box;
+	background-origin: content-box;
+	}
+
+	#smashingmag {
+  background: url(../assets/images/Smashing@2x.png) no-repeat center;
+  background-size: contain;
+	background-origin: content-box;
+	background-origin: content-box;
+	}
+
+	#mashable {
+  background: url(../assets/images/Mashable@2x.png) no-repeat center;
+  background-size: contain;
+	background-origin: content-box;
+	background-origin: content-box;
+	}
+
+}
+
+@media only screen and (min-width: 400px), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx){
+	#feature {
+		background-image: url('../assets/images/MastheadPhoneLandscape@2x.jpg');
+	}
+}
+
+
+@media only screen and (min-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx){
+	#feature {
+		background-image: url('../assets/images/Masthead@2x.jpg');
+	}
+}
